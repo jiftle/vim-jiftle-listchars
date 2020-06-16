@@ -40,7 +40,8 @@ let g:current_listchar_id = 0
 let g:listchar_formats=[ 
    \"trail:·",
    \"tab:»·,eol:↲,nbsp:␣,extends:…,space:·,precedes:<,extends:>,trail:·",
-   \"tab:»·,space:·"
+   \"tab:»·,space:·",
+   \"tab:>-,trail:-"
    \]
 
 " lists are 0 indexed
@@ -68,5 +69,6 @@ command! ToggleListchars call ToggleInvisibleChar()
 map <silent> <Plug>(ToggleListchars) :ToggleListchars<CR>
 
 " ------------- 默认显示，控制字符----------------
-let g:current_listchar_id = 1
+let g:current_listchar_id = 2 " 支持centos
+let g:current_listchar_id = 1 " 样式最好看
 :ToggleListchars
