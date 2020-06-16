@@ -37,12 +37,10 @@ endif
 let g:current_listchar_id = 0
 
 
-"\"trail:·,tab:→\ ,eol:↲,precedes:<,extends:>", 
-        "  d sds         
 let g:listchar_formats=[ 
    \"trail:·",
-   \"tab:»·,eol:↲,nbsp:␣,extends:…,space:␣,precedes:<,extends:>,trail:·",
-   \"tab:»·,nbsp:↲,trail:↲"
+   \"tab:»·,eol:↲,nbsp:␣,extends:…,space:·,precedes:<,extends:>,trail:·",
+   \"tab:»·,space:·"
    \]
 
 " lists are 0 indexed
@@ -69,3 +67,6 @@ endfunction
 command! ToggleListchars call ToggleInvisibleChar()
 map <silent> <Plug>(ToggleListchars) :ToggleListchars<CR>
 
+" ------------- 默认显示，控制字符----------------
+let g:current_listchar_id = 1
+:ToggleListchars

@@ -27,3 +27,10 @@ let g:listchar_formats=[
 There is no default mapping, you have to add it yourself, for instance:
 
 ```noremap <F11> <Plug>(ToggleListchars)```
+
+
+## 修改
+
+
+- 默认显示控制字符(TAB，SPACE)
+
