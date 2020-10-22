@@ -9,7 +9,7 @@ To install
 ===
 For vim-plug:
 ```
-Plug 'teto/vim-listchars'
+Plug 'jiftle/vim-jiftle-listchars'
 ```
 
 How to configure
@@ -30,7 +30,6 @@ There is no default mapping, you have to add it yourself, for instance:
 
 
 ## 修改
-
 
 - 默认显示控制字符(TAB，SPACE)
 
