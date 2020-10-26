@@ -54,12 +54,12 @@ function! ToggleInvisibleChar()
    let g:current_listchar_id += 1
 
    if g:current_listchar_id >= l:len
-      set nolist
+      " set nolist
       let g:current_listchar_id = -1
    else
       "echom "index=".g:current_listchar_id." format=".g:listchar_formats[g:current_listchar_id]
       " list is local to window while listchars is global
-      set list
+      " set list
       execute "set listchars=".g:listchar_formats[g:current_listchar_id]
    endif
 endfunction
@@ -71,4 +71,9 @@ map <silent> <Plug>(ToggleListchars) :ToggleListchars<CR>
 " ------------- 默认显示，控制字符----------------
 let g:current_listchar_id = 2 " 支持centos
 let g:current_listchar_id = 1 " 样式最好看
+
+" 设置list字符
 :ToggleListchars
+
+" 默认不修改，当前的显示  --2020-10-26
+" set nolist

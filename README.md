@@ -33,3 +33,7 @@ There is no default mapping, you have to add it yourself, for instance:
 
 - 默认显示控制字符(TAB，SPACE)
 
+## History
+
+- 2020-10-26
+    - 默认不修改set list，避免影响.vimrc中的配置
